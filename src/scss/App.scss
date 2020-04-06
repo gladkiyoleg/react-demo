@@ -1,0 +1,46 @@
+.header {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+
+    button {
+      color: #333;
+    }
+
+    &.active {
+      button {
+        color: #f50057;
+      }
+    }
+  }
+  
+  &.theme-light {
+    background-color: #eee;
+  }
+  
+  &.theme-dark {
+    background-color: #424242;
+  }
+}
+
+.pagination-wrapper {
+  margin: 32px 0 16px;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 48%;
+  }
+}
+
+.theme-wrapper {
+  background-color: #eee;
+  min-height: 100vh;
+  padding: 15px 0;
+}

@@ -1,0 +1,22 @@
+.video{
+  width: 720px;
+  height: 560px;
+
+  &--wrapper {
+
+  }
+}
+
+.button{
+  width: 180px;
+  height: 48px;
+
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
+
+  &--wrapper {
+  display: flex;
+  }
+
+}
