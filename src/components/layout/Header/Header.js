@@ -18,6 +18,9 @@ export default function Header() {
         <NavLink exact to='/video-recording'>
           <Button>Record video</Button>
         </NavLink>
+        <NavLink exact to='/video-recording-lib'>
+          <Button>Record video (with lib)</Button>
+        </NavLink>
       </div>
     </Paper>
   );

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import '../../../scss/Video.scss';
 
-export default class VideoRecording extends Component {
+export default class VideoRecording extends React.Component {
   constructor(props) {
     super(props);
     this.videoRef = React.createRef();
@@ -32,9 +32,12 @@ export default class VideoRecording extends Component {
     this.updateVideoStream();
   }
 
+  componentWillUnmount() {
+    this.state.videoRef.getTracks().forEach(track => track.stop())
+  }
+
   updateVideoStream() {
     if (this.videoRef.current.srcObject !== this.state.videoRef) {
-      console.log(this.state.videoRef);
       this.videoRef.current.srcObject = this.state.videoRef;
     }
   }
