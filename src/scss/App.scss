@@ -44,3 +44,15 @@
   min-height: 100vh;
   padding: 15px 0;
 }
+
+.button {
+  cursor: pointer;
+
+  &.button__facebook{
+    width: 48px;
+    background: #4c69ba;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 16px;
+  }
+}
